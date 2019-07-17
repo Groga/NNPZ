@@ -17,21 +17,22 @@
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<div id="header">
+				{% block Header %}
 
-					<!-- Inner -->
-						{% include 'Inner.html' %}
-					<!-- Nav -->
-						{% include 'menu.html' %}
-
-				</div>
+				{% endblock Header %}
 
 			<!-- Banner -->
-				{% include 'Banner.html' %}
+			{% block Banner %}
+
+			{% endblock Banner %}
 			<!-- Carousel -->
-				{% include 'Carousel.html'%}
+			{% block Carousel %}
+
+			{% endblock Carousel %}
 			<!-- Main -->
-				{% include 'Main.html'%}
+			{% block Main %}
+
+			{% endblock Main%}
 
 			<!-- Features -->
 				<div class="wrapper style1">

@@ -1,10 +1,10 @@
 <nav id="nav">
 							<ul>
-								<li><a href="index.html">Домой</a></li>
+								<li><a href="{% url 'index' %}">Домой</a></li>
 								<li>
-									<a href="{% url 'index' %}">Сервисы</a>
+									<a href="#">Сервисы</a>
 									<ul>
-										<li><a href="#">Active Directory</a></li>
+										<li><a href="{% url 'Ldap' %}">Active Directory</a></li>
 										<li><a href="#">2</a></li>
 										<li><a href="#">3</a></li>
 										<li>

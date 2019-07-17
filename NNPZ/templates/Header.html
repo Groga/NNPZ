@@ -1,0 +1,13 @@
+{% load static %}
+<div id="header">
+
+	<!-- Inner -->
+    {% block Inner %}
+        {% include 'Inner.html'%}
+	{% endblock Inner %}
+	<!-- Nav -->
+	{% block Menu %}
+        {% include 'menu.html'%}
+	{% endblock Menu%}
+
+</div>
