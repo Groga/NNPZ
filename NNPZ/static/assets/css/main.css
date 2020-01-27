@@ -2186,6 +2186,18 @@ input, select, textarea {
 		cursor: default;
 	}
 
+	#header_ldap {
+		position: relative;
+		background-image: url("../../images/header.jpg");
+		background-size: auto auto;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 7.5em 0 2em 0;
+		cursor: default;
+	}
+
 		#header:before {
 			content: '';
 			display: inline-block;

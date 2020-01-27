@@ -41,6 +41,10 @@ INSTALLED_APPS = [
     'Ldap'
 ]
 
+AUTHENTICATION_BACKENDS = ["django_auth_ldap.backend.LDAPBackend",
+                           "django.contrib.auth.backends.ModelBackend",
+                           ]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

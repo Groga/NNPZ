@@ -1,11 +1,14 @@
 {% extends 'index.html' %}
 
-    {% block Menu %}
-        {% include 'menu.html' %}
-    {% endblock Menu %}
+{% block Header %}
+{% include 'Ldap/header_ldap.html' %}
+{% endblock Header %}
 <body>
 <center>
-<h1>Подключение к AD (Ldap)</h1>
-<h2>тут попытки подключения к контроллеру домена</h2>
+    {% block Banner %}
+    <h1>Подключение к AD (Ldap)</h1>
+    <li><a href="{% url 'ld_conn' %}"<h2>тут попытки подключения к контроллеру домена</h2></a></li>
+    {% endblock Banner %}
+
 </center>
 </body>
